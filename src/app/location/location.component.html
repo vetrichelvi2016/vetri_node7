@@ -1,0 +1,7 @@
+<button (click)="showContent()">click</button>
+{{locationList}}
+<ul *ngFor="let list of locationList; let i =index" ngIF="locationList.length">
+  <li>{{list.locationName}}</li>
+  <li>{{list.cc}}</li>
+  
+</ul>

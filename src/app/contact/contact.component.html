@@ -1,0 +1,11 @@
+<div>
+  <h1>Contacts</h1>
+<div>
+
+  {{contactList |json}}contactList
+ <ul *ngFor="let contact of heroes; let i = index" ngIF="contactList.length">
+   <span><li>{{contact.name}}</li></span>
+   <span><li>{{contact.age}}</li></span>
+ </ul>
+</div>
+</div>
